@@ -87,9 +87,9 @@ document.getElementById('form').addEventListener('submit', (e) => {
 });
 
 const clock = () => {
-    const now = DateTime.now().toFormat('LLL dd yyyy, TT');
-    const date2 = document.getElementById('date');
-    date2.textContent = now.toLocaleString(DateTime.DATETIME_MED);
+  const now = DateTime.now().toFormat('LLL dd yyyy, TT');
+  const date2 = document.getElementById('date');
+  date2.textContent = now.toLocaleString(DateTime.DATETIME_MED);
 };
 
 setInterval(clock, 1000);
